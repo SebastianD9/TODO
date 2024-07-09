@@ -1,0 +1,207 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--deep-dark: rgb(26, 26, 26);
+	--light-dark: rgb(79, 82, 92);
+	--light-blue: rgb(0, 132, 255);
+	--dark-blue: rgb(2, 84, 161);
+	--light: rgb(245, 245, 245);
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	margin-top: 120px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: var(--light);
+}
+
+h1{
+	margin-bottom: 20px;
+	color: var(--light);
+}
+
+.deletebtn{
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 1em 1em;
+}
+
+.btnDeletestorage {
+	padding: 1em 1em;
+	color: white;
+	background-color: black;
+	border-radius: 8px;
+	font-size: 17px;
+	font-family: 'Courier New', Courier, monospace;
+}
+.btnDeletestorage:hover{
+	cursor:pointer;
+	background: rgba(66, 68, 90, 1);
+}
+
+.container {
+	width: 800px;
+	background-color: #fff;
+	box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+	text-align: center;
+	border-radius: 5px;
+}
+
+.header {
+	padding: 40px;
+	border-radius: 5px 5px 0 0;
+	background-color: var(--light-blue);
+}
+
+.todoInput{
+	width: 80%;
+	padding: 10px 20px;
+	margin-right: 20px;
+	border: none;
+	border-radius: 5px;
+	color: var(--light-dark);
+	background-color: var(--light);
+}
+
+.alert-info {
+	margin-top: 20px;
+	color: var(--dark-blue);
+}
+
+.addBtn {
+	padding: 10px 22px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	color: var(--dark-blue);
+	background-color: var(--light);
+	text-transform: uppercase;
+	transition: background-color .3s, color .3s;
+}
+
+.addBtn:hover {
+	color: #fff;
+	background-color: var(--light-dark);
+}
+
+.tasks {
+	padding: 20px 0px;
+}
+
+.tasks h3 {
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+
+.tasks li {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px;
+	padding-left: 20px;
+	text-align-last: left;
+	background-color: var(--light);
+}
+
+.tools {
+	display: inline-block;
+}
+
+.tools button {
+	padding: 15px 10px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	transition: background-color 0.3;
+}
+
+.tools button:hover {
+	background-color: #ddd;
+}
+
+.complete {
+	color: var(--light-blue);
+}
+
+.edit {
+	font-weight: bold;
+	color: rgb(15, 179, 69);
+}
+
+.delete {
+	color: tomato;
+}
+
+.completed {
+	font-size: 12px;
+	font-style: italic;
+	color: var(--light-dark);
+	text-decoration: line-through;
+}
+
+.popUp {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 800px;
+	color: var(--light);
+	background-color: var(--light-dark);
+	border-radius: 5px;
+}
+
+.popUp h3{
+	padding: 20px;
+}
+
+.popUpInfo {
+	margin-bottom: 20px;
+	color: var(--light);
+}
+
+.popUpBody{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 90%;
+	padding: 10px;
+}
+
+.popUpInput {
+	width: 100%;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	color: var(--light-dark);
+	background-color: var(--light);
+}
+
+.popUp button {
+	display: inline-block;
+	width: 30%;
+	padding: 10px 22px;
+	margin: 20px;
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	color: var(--deep-dark);
+	background-color: var(--light);
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.popUp button:hover {
+	color: #fff;
+	background-color: var(--light-blue);
+}
