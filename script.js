@@ -178,7 +178,7 @@ const enterCheck = () => {
 
 const DeleteAllLocalStorage = () => {
 	window.localStorage.clear();
-	location.reload();
+	window.location.reload();
 }
 
 document.addEventListener('DOMContentLoaded', main); //Wczytanie całego html i css i dopiero potem JS
